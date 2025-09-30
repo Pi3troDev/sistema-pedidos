@@ -16,4 +16,7 @@ sequelize.authenticate()
   .then(() => console.log('Conexão MariaDB OK!'))
   .catch(err => console.error('Erro na conexão:', err));
 
-module.exports = { sequelize };
+// Importa o modelo passando o sequelize
+const User = require('./User')(sequelize);
+
+module.exports = { sequelize, User };
