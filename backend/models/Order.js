@@ -1,23 +1,34 @@
-const { DataTypes } = require('sequelize');
-const { sequelize } = require('./index');
+'use strict';
+const { Model } = require('sequelize');
 
-const Order = sequelize.define('Order',{
+module.exports = (sequelize, DataTypes) => {
+  class Order extends Model {
+    static associate(models) {
+      this.belongsTo(models.User, { foreignKey: 'userId' });
+      this.hasMany(models.OrderItem, { foreignKey: 'orderId' });
+    }
+  }
+
+  // 4. Inicialize o modelo com suas colunas
+  Order.init({
     userId: {
-        type: DataTypes.INTEGER,
-        allowNull: false
+      type: DataTypes.INTEGER,
+      allowNull: false
     },
     status: {
-        type: DataTypes.STRING,
-        allowNull: false
+      type: DataTypes.STRING,
+      defaultValue: 'Em preparo'
     },
     total: {
-        type: DataTypes.FLOAT,
-        allowNull: false
+      type: DataTypes.DECIMAL(10, 2),
+      allowNull: false,
+      defaultValue: 0
     }
-    },
-      {
-        timestamps: false
-      }
-);
+  }, {
+    sequelize,
+    modelName: 'Order',
+    tableName: 'orders'
+  });
 
-module.exports = Order;
+  return Order;
+};

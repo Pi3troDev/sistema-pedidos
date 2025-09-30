@@ -3,12 +3,22 @@ const express = require('express');
 const cors = require('cors');
 const usersRouter = require('./routes/users');
 const { sequelize } = require("./models");
+const authRouter = require('./routes/auth');
+const ordersRouter = require('./routes/orders');
+
+
+
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 app.use('/users', usersRouter);
+
+app.use('/auth', authRouter);
+
+app.use('/orders', ordersRouter);
+
 
 app.get('/', (req, res) => {
   res.send('Backend rodando!');
