@@ -34,15 +34,16 @@ async function createUser(req, res) {
 
 async function updateUser(req, res) {
   try {
-    const { id } = req.params;
-    const [updated] = await User.update(req.body, { where: { id } });
+    const userId = req.user.id;
+    const [updated] = await User.update(req.body, { where: { id: userId } });
     if (!updated) return res.status(404).json({ error: "Usuário não encontrado" });
-    const updatedUser = await User.findByPk(id);
+    const updatedUser = await User.findByPk(userId);
     res.json(updatedUser);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 }
+
 
 
 async function deleteUser(req, res) {

@@ -5,8 +5,7 @@ const usersRouter = require('./routes/users');
 const { sequelize } = require("./models");
 const authRouter = require('./routes/auth');
 const ordersRouter = require('./routes/orders');
-
-
+const productsRouter = require('./routes/products');
 
 
 const app = express();
@@ -18,6 +17,8 @@ app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 
 app.use('/orders', ordersRouter);
+
+app.use('/products', productsRouter);
 
 
 app.get('/', (req, res) => {
