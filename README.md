@@ -1,75 +1,97 @@
-# Sistema de Pedidos Full-Stack 🍔🍕
-📜 Sobre o Projeto
-Este é um sistema de pedidos completo, desenvolvido para pequenos negócios gerenciarem seus produtos e vendas. A aplicação possui um backend robusto construído com Node.js e uma interface de usuário moderna e reativa com React.
+<div align="center">
 
-# ✨ Funcionalidades
-✅ Autenticação Segura: Cadastro e Login com senhas criptografadas e tokens JWT.
+# 🍔 Sistema de Pedidos  
+Uma solução **full-stack** para gerenciamento de produtos e pedidos, construída com **Node.js** e **React**.
 
-✅ Separação de Perfis: Rotas e painéis distintos para Clientes e Administradores.
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=for-the-badge)  
+![Licença](https://img.shields.io/badge/licença-MIT-blue?style=for-the-badge)
 
-✅ Vitrine de Produtos: Exibição de produtos com imagem, nome e preço.
+</div>
 
-✅ Interface Reativa: Experiência de usuário fluida e rápida, sem recarregar a página.
+---
 
-🛠️ Tecnologias Utilizadas
-Backend (API)
-<p>
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/node.js-339933%3Fstyle%3Dfor-the-badge%26logo%3Dnodedotjs%26logoColor%3Dwhite" alt="Node.js">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/express.js-%2523404d59.svg%3Fstyle%3Dfor-the-badge%26logo%3Dexpress%26logoColor%3D%252361DAFB" alt="Express.js">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Sequelize-52B0E7%3Fstyle%3Dfor-the-badge%26logo%3Dsequelize%26logoColor%3Dwhite" alt="Sequelize">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/mysql-%252300f.svg%3Fstyle%3Dfor-the-badge%26logo%3Dmysql%26logoColor%3Dwhite" alt="MySQL">
-</p>
+## 📜 Sobre o Projeto
+O **Sistema de Pedidos** é uma plataforma completa que auxilia pequenos negócios a exibirem seus produtos e gerenciarem pedidos de forma eficiente.  
 
-Frontend (Cliente)
-<p>
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/react-%252320232a.svg%3Fstyle%3Dfor-the-badge%26logo%3Dreact%26logoColor%3D%252361DAFB" alt="React">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/React_Router-CA4245%3Fstyle%3Dfor-the-badge%26logo%3Dreact-router%26logoColor%3Dwhite" alt="React Router">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/axios-671ddf%3F%26style%3Dfor-the-badge%26logo%3Daxios%26logoColor%3Dwhite" alt="Axios">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/css3-%25231572B6.svg%3Fstyle%3Dfor-the-badge%26logo%3Dcss3%26logoColor%3Dwhite" alt="CSS3">
-</p>
+A aplicação é dividida em:
+- **Backend (API)**: responsável pela lógica de negócio, autenticação e persistência dos dados.  
+- **Frontend (Cliente)**: interface moderna e responsiva para clientes e administradores.  
 
-🚀 Como Executar
-Siga os passos abaixo para rodar o projeto localmente.
+---
 
-Pré-requisitos
-Node.js (v16+)
+## ✨ Funcionalidades
 
-Git
+| Funcionalidade         | Status | Descrição |
+|-------------------------|--------|-----------|
+| 🔒 Autenticação Segura | ✅ | Cadastro e Login com senhas criptografadas e autenticação via JWT |
+| 👤 Separação de Perfis | ✅ | Rotas e painéis distintos para **Clientes** e **Administradores** |
+| 🛍️ Vitrine de Produtos | ✅ | Exibição de produtos com imagem, nome, descrição e preço |
+| ⚡ Interface Reativa   | ✅ | Navegação fluida, sem recarregar a página |
+| 🛒 Carrinho de Compras | 🚧 | Em desenvolvimento |
+| 📊 Painel do Admin     | 🚧 | Em desenvolvimento |
 
-NPM ou Yarn
+---
 
-MySQL ou MariaDB
+## 🛠️ Tecnologias Utilizadas  
 
-1. Clonar o Repositório
-git clone [https://github.com/PietroDev/sistema-pedidos.git](https://github.com/PietroDev/sistema-pedidos.git)
+### Backend
+![Node.js](https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=sequelize&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+### Frontend
+![React](https://img.shields.io/badge/react-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Axios](https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+---
+
+## 🚀 Como Executar o Projeto
+
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) (v16 ou superior)  
+- [Git](https://git-scm.com/)  
+- NPM ou Yarn  
+- Banco de dados **MySQL** ou **MariaDB** ativo  
+
+---
+
+### 🔧 Passos para rodar localmente
+
+#### 1. Clone o repositório
+```bash
+git clone https://github.com/PietroDev/sistema-pedidos.git
 cd sistema-pedidos
 
-2. Configurar e Rodar o Backend
-# Acesse a pasta do backend
+# Acesse a pasta
 cd backend
 
 # Instale as dependências
 npm install
 
-# Configure seu arquivo .env
+# Configure variáveis de ambiente
 cp .env.example .env
 
-# Rode as migrations do banco
+# Rode as migrations
 npx sequelize-cli db:migrate
 
 # Inicie o servidor
 npm start
 
-3. Configurar e Rodar o Frontend
-# Em um novo terminal, acesse a pasta do frontend
+# Em um novo terminal, acesse a pasta
 cd frontend
 
 # Instale as dependências
 npm install
 
-# Inicie o cliente React
+# Inicie a aplicação
 npm start
 
-A aplicação estará rodando em http://localhost:3001.
+div align="center">
+👨‍💻 Desenvolvido por PietroDev
 
-Feito com ❤️ por PietroDev.
+Feito com ❤️ e muito ☕
+
+</div> ```
