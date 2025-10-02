@@ -1,133 +1,75 @@
-Sistema de Pedidos Full-Stack
-Um projeto completo de um sistema de pedidos online, construído com um backend robusto em Node.js e um frontend moderno e reativo em React.
-
+# Sistema de Pedidos Full-Stack 🍔🍕
 📜 Sobre o Projeto
-Este projeto foi desenvolvido como uma solução completa para pequenos negócios que precisam de uma plataforma para exibir seus produtos e gerenciar pedidos. A aplicação conta com autenticação de usuários, separação de perfis (cliente e administrador) e uma interface intuitiva para uma ótima experiência do usuário.
+Este é um sistema de pedidos completo, desenvolvido para pequenos negócios gerenciarem seus produtos e vendas. A aplicação possui um backend robusto construído com Node.js e uma interface de usuário moderna e reativa com React.
 
-✨ Funcionalidades Implementadas
-Autenticação de Usuários: Sistema seguro de cadastro e login com senhas criptografadas.
+# ✨ Funcionalidades
+✅ Autenticação Segura: Cadastro e Login com senhas criptografadas e tokens JWT.
 
-Tokens JWT: Sessões de usuário gerenciadas com JSON Web Tokens para segurança e statelessness.
+✅ Separação de Perfis: Rotas e painéis distintos para Clientes e Administradores.
 
-Perfis de Acesso:
+✅ Vitrine de Produtos: Exibição de produtos com imagem, nome e preço.
 
-Cliente: Visualiza a vitrine de produtos, faz login e se cadastra.
-
-Administrador: Acessa um painel de controle exclusivo para gerenciamento.
-
-Vitrine de Produtos: Exibição dinâmica dos produtos cadastrados no sistema.
-
-Frontend Reativo: Interface construída com React para uma navegação rápida e fluida.
+✅ Interface Reativa: Experiência de usuário fluida e rápida, sem recarregar a página.
 
 🛠️ Tecnologias Utilizadas
-Este projeto é dividido em duas partes principais: o Backend e o Frontend.
-
 Backend (API)
-Tecnologia
-
-Descrição
-
-Node.js
-
-Ambiente de execução para o JavaScript no servidor.
-
-Express.js
-
-Framework para a construção da API RESTful.
-
-Sequelize
-
-ORM para interagir com o banco de dados de forma segura.
-
-MySQL / MariaDB
-
-Banco de dados relacional para armazenar os dados.
-
-Bcrypt.js
-
-Biblioteca para criptografar as senhas dos usuários.
-
-JWT
-
-Geração e validação de tokens para autenticação.
+<p>
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/node.js-339933%3Fstyle%3Dfor-the-badge%26logo%3Dnodedotjs%26logoColor%3Dwhite" alt="Node.js">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/express.js-%2523404d59.svg%3Fstyle%3Dfor-the-badge%26logo%3Dexpress%26logoColor%3D%252361DAFB" alt="Express.js">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Sequelize-52B0E7%3Fstyle%3Dfor-the-badge%26logo%3Dsequelize%26logoColor%3Dwhite" alt="Sequelize">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/mysql-%252300f.svg%3Fstyle%3Dfor-the-badge%26logo%3Dmysql%26logoColor%3Dwhite" alt="MySQL">
+</p>
 
 Frontend (Cliente)
-Tecnologia
+<p>
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/react-%252320232a.svg%3Fstyle%3Dfor-the-badge%26logo%3Dreact%26logoColor%3D%252361DAFB" alt="React">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/React_Router-CA4245%3Fstyle%3Dfor-the-badge%26logo%3Dreact-router%26logoColor%3Dwhite" alt="React Router">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/axios-671ddf%3F%26style%3Dfor-the-badge%26logo%3Daxios%26logoColor%3Dwhite" alt="Axios">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/css3-%25231572B6.svg%3Fstyle%3Dfor-the-badge%26logo%3Dcss3%26logoColor%3Dwhite" alt="CSS3">
+</p>
 
-Descrição
-
-React.js
-
-Biblioteca para a construção da interface de usuário.
-
-React Router
-
-Gerenciamento das rotas da aplicação (navegação).
-
-Axios
-
-Cliente HTTP para realizar as chamadas para a API.
-
-Context API
-
-Gerenciamento do estado de autenticação global.
-
-CSS Modules
-
-Estilização dos componentes de forma organizada.
-
-🚀 Como Executar o Projeto
-Siga os passos abaixo para rodar o projeto em sua máquina local.
+🚀 Como Executar
+Siga os passos abaixo para rodar o projeto localmente.
 
 Pré-requisitos
-Node.js (versão 16 ou superior)
+Node.js (v16+)
 
 Git
 
-Um gerenciador de pacotes como NPM ou Yarn
+NPM ou Yarn
 
-Um banco de dados MySQL ou MariaDB rodando localmente.
+MySQL ou MariaDB
 
 1. Clonar o Repositório
-git clone [https://github.com/seu-usuario/sistema-pedidos.git](https://github.com/seu-usuario/sistema-pedidos.git)
+git clone [https://github.com/PietroDev/sistema-pedidos.git](https://github.com/PietroDev/sistema-pedidos.git)
 cd sistema-pedidos
 
-2. Configurar o Backend
-# Navegue até a pasta do backend
+2. Configurar e Rodar o Backend
+# Acesse a pasta do backend
 cd backend
 
 # Instale as dependências
 npm install
 
-# Crie um arquivo .env a partir do .env.example e configure suas variáveis de ambiente
-# (principalmente as credenciais do banco de dados e o segredo JWT)
+# Configure seu arquivo .env
 cp .env.example .env
 
-# Rode as migrações para criar as tabelas no banco
+# Rode as migrations do banco
 npx sequelize-cli db:migrate
 
-# Inicie o servidor do backend
+# Inicie o servidor
 npm start
 
-3. Configurar o Frontend
-# Em um novo terminal, navegue até a pasta do frontend
+3. Configurar e Rodar o Frontend
+# Em um novo terminal, acesse a pasta do frontend
 cd frontend
 
 # Instale as dependências
 npm install
 
-# Inicie a aplicação React
+# Inicie o cliente React
 npm start
 
-Após seguir esses passos, a aplicação estará rodando em http://localhost:3001 e o backend em http://localhost:3000.
-
-🔮 Próximos Passos
-[ ] Implementar carrinho de compras.
-
-[ ] Funcionalidade para o cliente finalizar um pedido.
-
-[ ] Painel do administrador para cadastrar/editar produtos.
-
-[ ] Painel do administrador para visualizar e gerenciar pedidos.
+A aplicação estará rodando em http://localhost:3001.
 
 Feito com ❤️ por PietroDev.
