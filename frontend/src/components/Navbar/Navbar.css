@@ -33,6 +33,35 @@
   font-weight: 500;
 }
 
+/* --- NOVOS ESTILOS PARA O CARRINHO --- */
+.cart-button-container {
+  position: relative;
+  cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-button-container:hover {
+  background-color: #f0f0f0;
+}
+
+.cart-badge {
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+/* --- FIM DOS NOVOS ESTILOS --- */
+
 .logout-button {
   background-color: #e74c3c;
   color: white;
@@ -48,3 +77,4 @@
 .logout-button:hover {
   background-color: #c0392b;
 }
+

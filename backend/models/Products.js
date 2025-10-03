@@ -19,7 +19,14 @@ module.exports = (sequelize) => {
     estoque: {
       type: DataTypes.INTEGER,
       allowNull: false
+    },
+    // --- AQUI ESTÁ A CORREÇÃO ---
+    // Adicionamos a coluna que faltava para que o backend a reconheça
+    imageUrl: {
+      type: DataTypes.STRING,
+      allowNull: true
     }
+    // --- FIM DA CORREÇÃO ---
   }, {
     timestamps: false, 
   });

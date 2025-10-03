@@ -55,7 +55,7 @@ function LoginPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              placeholder="********"
+              placeholder="Insira sua senha"
             />
           </div>
           
